@@ -1,0 +1,194 @@
+/* Styles pour la classe image-grid */
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espacement entre les images */
+	justify-content: center; /* Centre les images horizontalement */
+
+}
+
+.image-grid img {
+    max-width: 100%;
+    height: auto;
+    width: 374px; /* Taille fixe pour les images (ajustez selon vos besoins) */
+    height: 374px; /* Taille fixe pour les images (ajustez selon vos besoins) */
+    object-fit: cover; /* Ajuste l'image pour remplir la boîte sans déformer */
+}
+
+		
+		/* Pour une mise en page responsive */
+		@media screen and (max-width: 768px) {
+			.image-grid img {
+				width: calc(33.33% - 10px); /* 33.33% de la largeur parente pour des écrans plus petits */
+			}
+		}
+		/* Styles pour la superposition (overlay) */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+/* Styles pour l'image agrandie */
+.zoomed-image {
+	margin-top: 100px;
+    max-width: 90%; /* Ajustez la taille maximale selon vos besoins */
+    max-height: 90%; /* Ajustez la taille maximale selon vos besoins */
+    object-fit: contain;
+}
+
+#presenation{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 200px;
+}	
+.container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+	margin: 10px;
+	
+}
+
+
+
+
+
+.texte2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+	text-align: center; /* Centre le texte horizontalement */
+	white-space: nowrap; /* Empêche le retour à la ligne automatique */
+    color: white;
+    padding: 10px;
+	font-size: 2em;
+	-webkit-text-stroke: 0.5px black; /* Contour blanc de 2px */
+}
+.bouton-decouvrir {
+    position: absolute;
+    top: 75%; /* Centrer verticalement */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrer horizontalement */
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.bouton-decouvrir:hover {
+    background-color: #090a0a; /* Couleur de fond du bouton (bleue foncée) au survol */
+}
+/* Styles pour les écrans de taille moyenne (par exemple, tablettes) */
+@media (max-width: 768px) {
+    .texte {
+        font-size: 1.2em; /* Réduisez la taille de la police pour les écrans plus petits */
+    }
+    
+    .texte2 {
+        font-size: 1.5em; /* Réduisez la taille de la police pour les écrans plus petits */
+    }
+}
+
+
+.enveloppe{
+	color : white;
+}
+.container2 {
+	display: flex; /* Utilisation de flexbox pour la mise en page */
+	margin-left: 20px; /* Ajoutez de l'espace à gauche */
+    margin-right: 20px; /* Ajoutez de l'espace à droite */
+	align-items: center;
+	padding-bottom: 20px; /* Ajout d'un espace en bas de la ligne de séparation */
+	padding-top: 20px;
+	flex-direction: column; /* Empile les éléments les uns sur les autres sur des écrans plus petits */
+}
+	
+
+
+.colonne1 {
+	flex: 1; /* La première colonne prend 1/3 de l'espace disponible */
+	padding: 20px; /* Ajoutez de la marge pour l'espace autour du titre */
+	text-align: center;
+	
+	
+}
+
+.colonne2 {
+	flex: 2; /* La deuxième colonne prend 2/3 de l'espace disponible */
+	padding: 20px; /* Ajoutez de la marge pour l'espace autour du texte */
+	background-color: white; /* Couleur de fond de la deuxième colonne */
+	color: black;
+
+	text-align: center;
+
+}
+
+p{
+	margin-bottom: 0;
+}
+.line {
+    width: 50%; /* La ligne fait la moitié de la largeur de l'écran */
+    height: 1px; /* Épaisseur de la ligne */
+    background-color: black; /* Couleur de la ligne */
+    margin: 0 auto; /* Centre la ligne horizontalement */
+}
+.line2 {
+    width: 75%; /* La ligne fait la moitié de la largeur de l'écran */
+    height: 3px; /* Épaisseur de la ligne */
+    background-color: black; /* Couleur de la ligne */
+    margin: 50px auto; /* Centre la ligne horizontalement */
+}
+@media (min-width: 768px) { /* Définissez la largeur minimale de l'écran pour la mise en page côte à côte */
+    .container2 {
+        flex-direction: row; /* Remettez-les côte à côte pour les écrans plus larges */
+    }
+    .colonne1 {
+        flex: 1; /* Ajustez la largeur de la colonne 1 */
+    }
+    .colonne2 {
+        flex: 2; /* Ajustez la largeur de la colonne 2 */
+    }
+}
+.container3 {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    
+}
+
+.container3 img {
+    max-width: 90%; /* Pour s'assurer que l'image ne dépasse pas la largeur du conteneur */
+}
+.titre2{
+	text-align: center;
+}
+h1{
+	margin-top: 100px;
+	text-align: center;
+}
+h2{
+	text-align: center;	
+}
+.titreContact{
+    padding : 40px 0 50 px 0;
+    margin-top: 50px;
+}
+.carousel-item {
+    height: 60rem;
+}
+
+  
